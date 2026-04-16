@@ -3,5 +3,6 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
     plugins: [react()],
-    base: "/wordle-like-2/",
+    // Default to this repo path, but allow CI/workflows to override when needed.
+    base: process.env.VITE_BASE_PATH || "/wordle-like-2/",
 });

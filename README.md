@@ -11,6 +11,13 @@ to run:
 npm install
 npm run dev
 
+Deploying to GitHub Pages
+
+- This project uses `.github/workflows/deploy.yml` to deploy on every push to `main`.
+- `vite.config.js` uses `VITE_BASE_PATH` (set in CI) so assets resolve correctly on Pages.
+- In GitHub repo settings, set **Pages** source to **GitHub Actions**.
+- Site URL format is typically: `https://<your-user>.github.io/wordle-like-2/`.
+
 Key Design Choices
 No coupling between UI and logic- easy to test & reuse
 Small, focused components-- scalable as features grow
