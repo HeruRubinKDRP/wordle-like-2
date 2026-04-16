@@ -1,4 +1,4 @@
-import KeyboardRow from "./KeyBoardRow.jsx";
+import KeyboardRow from "./KeyboardRow.jsx";
 import { KEYBOARD_ROWS } from "../../logic/wordle";
 /**
  * Keyboard UI Component
